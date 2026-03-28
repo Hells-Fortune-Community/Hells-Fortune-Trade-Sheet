@@ -305,14 +305,19 @@ body {
 
 [contenteditable="true"] { caret-color: var(--gold-1); }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   body { padding: 14px; }
   .trade-board {
     width: 100%;
     max-height: none;
+    aspect-ratio: auto;
+    min-height: 1100px;
+    overflow: visible;
   }
   .board-shell {
-    inset: 22px 22px;
+    position: relative;
+    inset: auto;
+    padding: 22px;
     grid-template-rows: auto auto auto;
   }
   .board-header,
